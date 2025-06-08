@@ -3,7 +3,7 @@
     name: common
     tasks_from: app_setup
 
-- nmae: nodejs setup
+- name: nodejs setup
   include_role:
     name: common
     tasks_from: nodejs
