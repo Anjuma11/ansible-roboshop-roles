@@ -2,7 +2,7 @@
   tags:
   -  deployment
   include_role: 
-  name: common
+    name: common
     tasks_from: app_setup
 
 - name: nodejs setup
@@ -41,7 +41,7 @@
 - name: deployment
   tags:
   - deployment
-  inmport_role:
+  include_role:
    name: common
    tasks_from: deployment
       
