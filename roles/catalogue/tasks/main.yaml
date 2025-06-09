@@ -1,4 +1,6 @@
 - name: app setup
+  tags:
+  -  deployment
   include_role: 
     name: common
     tasks_from: app_setup
@@ -34,4 +36,12 @@
   include_role:
     name: common
     tasks_from: systemd.yaml
+
+
+- name: deployment
+  tags:
+  - deployment
+  include_role:
+   name: common
+   tasks_from: deployment
       
